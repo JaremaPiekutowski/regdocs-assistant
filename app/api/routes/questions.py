@@ -6,7 +6,7 @@ router = APIRouter()
 
 class QuestionRequest(BaseModel):
     question: str
-    top_k: int = Field(gte=1, lte=5, default=5)
+    top_k: int = Field(ge=1, le=5, default=5)
 
 
 class QuestionResponse(BaseModel):
