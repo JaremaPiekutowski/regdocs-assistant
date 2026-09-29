@@ -8,6 +8,8 @@ class Settings(BaseSettings):
 
     app_name: str
     environment: str
+    azure_openai_endpoint: str
+    azure_openai_chat_deployment: str
 
 
 @lru_cache
