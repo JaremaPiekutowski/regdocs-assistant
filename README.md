@@ -1,3 +1,3 @@
 # RegDocs Assistant
 
-Exercise before joining Deviniti
+An exercise in RAG
