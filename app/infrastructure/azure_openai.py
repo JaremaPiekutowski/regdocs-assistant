@@ -10,7 +10,7 @@ from app.core.config import get_settings
 def get_openai_client() -> OpenAI:
     credential = DefaultAzureCredential()
     settings = get_settings()
-    base_url = f"https://{settings.azure_openai_endpoint}/openai/v1/"
+    base_url = f"{settings.azure_openai_endpoint}/openai/v1/"
 
     token_provider = get_bearer_token_provider(
         credential,
